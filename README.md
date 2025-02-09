@@ -1,2 +1,34 @@
 # record-collection-frontend
-This frontend application is designed to interact with the Record Collection Backend, providing a user-friendly interface to manage a personal media collection. Built using React, it allows users to add, update, delete, and search for records in their collection, connecting seamlessly with the backend's RESTful APIs.
+
+## Building and Starting the Application
+
+### Requirements
+- Node.js (version 14 or higher)
+- npm (version 6 or higher)
+- Git
+
+### Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/yourusername/record-collection-frontend.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd record-collection-frontend
+    ```
+
+### Building the Application
+
+#### On Linux, Windows, and macOS
+To install dependencies and build the application, run:
+```sh
+npm install
+npm run build
+### Running the Application
+
+To start the application, run:
+```sh
+npm start
+```
+
+The application will be available at `http://localhost:3000`.
