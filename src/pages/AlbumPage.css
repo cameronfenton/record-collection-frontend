@@ -28,6 +28,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute; /* Ensure image covers entire card */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Place image below text */
 }
 
 .album-info {
@@ -35,5 +39,38 @@
   bottom: 10px;
   left: 10px;
   color: white;
-  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; /* Black outline */
+  font-family: 'Roboto', sans-serif; /* Ensure the font is Roboto */
+  background: none; /* Remove background */
+  padding: 0; /* Remove padding */
+  z-index: 2; /* Place text above image */
+}
+
+/* Styles for the Genre section */
+.genre-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.genre-button {
+  width: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+  height: 16.665px; /* Half of the album image height */
+  overflow: hidden; /* Hide any content that overflows */
+  background-color: #f0f0f0; /* Add a background color */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #333;
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.page-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
