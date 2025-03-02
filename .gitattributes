@@ -1,0 +1,9 @@
+# Set specific language for certain file types
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
+*.css linguist-language=CSS
+*.html linguist-language=HTML
+
+# Exclude build and node_modules directories from language statistics
+build/* linguist-vendored
+node_modules/* linguist-vendored
